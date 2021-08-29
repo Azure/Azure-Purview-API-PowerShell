@@ -2,8 +2,7 @@
 
 Execute Azure Purview APIs via PowerShell
 - Extract ZIP File to a folder of your choice.
-- Right-Click on the folder and select "PowerShell > Open Here As Administrator"
-- ![image](https://user-images.githubusercontent.com/13808986/131237833-6e9837c3-9e7f-4297-a800-2edf690fa9df.png)
+- Right-Click on the folder and select "PowerShell > Open Here As Administrator" ![image](https://user-images.githubusercontent.com/13808986/131237833-6e9837c3-9e7f-4297-a800-2edf690fa9df.png)
 - Run "Purview-API-PowerShell.exe"
 
 ## Contributing
