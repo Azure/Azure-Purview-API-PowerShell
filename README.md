@@ -1,11 +1,17 @@
 # Azure-Purview-API-via-PowerShell
 
-**Execute Azure Purview APIs via PowerShell**
-*********************************************
+**Execute Azure Purview RESTful APIs via PowerShell**
+*****************************************************
 - [Purview API Swagger Reference](https://github.com/Azure/Purview-Samples/blob/master/rest-api/PurviewCatalogAPISwagger.zip)
 - Extract ZIP File to a folder of your choice.
 - Right-Click on the folder and select "PowerShell > Open Here As Administrator" ![image](https://user-images.githubusercontent.com/13808986/131237833-6e9837c3-9e7f-4297-a800-2edf690fa9df.png)
 - Run "Purview-API-PowerShell.exe"
+
+**Benefits**
+************
+- While you can very well use cURL or Postman to Invoke Azure Purview APIs as well, it is generally cumbersome to extract the Azure OAuth2 *access_token* and use it appropriately in scripts or even during one-time API execution.
+- Powershell has very strong and user friendly integration interfaces with Azure Cloud and hence it makes it really useful to have a way to execute Azure Purview service via its APIs on Windows PowerShell.
+
 
 ## Contributing
 
