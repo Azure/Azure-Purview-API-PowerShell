@@ -3,8 +3,8 @@
 ************
 **Execute Azure Purview RESTful APIs via PowerShell**
 *****************************************************
-- [Purview API Swagger Reference](https://github.com/Azure/Purview-Samples/blob/master/rest-api/PurviewCatalogAPISwagger.zip)
-- Extract ZIP File to a folder of your choice.
+- Azure Purview REST APIs via Powershell. Based on [Purview API Swagger Reference](https://github.com/Azure/Purview-Samples/blob/master/rest-api/PurviewCatalogAPISwagger.zip)
+- Extract [Purview-API-Powershell.zip](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.zip) to a folder of your choice.
 - Right-Click on the folder and select "PowerShell > Open Here As Administrator" ![image](https://user-images.githubusercontent.com/13808986/131237833-6e9837c3-9e7f-4297-a800-2edf690fa9df.png)
 - Run "Purview-API-PowerShell.exe"
 
