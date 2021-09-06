@@ -8,7 +8,8 @@
 - Extract [Purview-API-Powershell.zip](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.zip) to a folder of your choice.
 - Right-Click on the folder and select "PowerShell > Open Here As Administrator" ![image](https://user-images.githubusercontent.com/13808986/131237833-6e9837c3-9e7f-4297-a800-2edf690fa9df.png)
 - Run "Purview-API-PowerShell.exe"
-- Note: The file "purview-api-body-payload.json" extracted in the same directory contains the API Body to be sent in case of PUT or POST APIs. Make sure to blank the file first, update your JSON into it and save the file before executing any "PUT" or "POST" APIs. If you need to back up your JSONs other than the one to be sent with the next request, you may do so in a different file name.
+- Note: The file "purview-api-body-payload.json" extracted in the same directory contains the API Body to be sent in case of PUT or POST APIs. Make sure to blank the file first, update your JSON into it and save the file before executing any "PUT" or "POST" APIs. If you need to back up your previous JSONs, you may do so in a different file name, since this file name "purview-api-body-payload.json" is reserved for the next upcoming API call.
+
 
 ************
 **Benefits**
