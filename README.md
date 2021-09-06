@@ -4,6 +4,7 @@
 **Execute Azure Purview RESTful APIs via PowerShell**
 *****************************************************
 - Azure Purview REST APIs via Powershell. Based on [Purview API Reference](https://docs.microsoft.com/en-us/rest/api/purview/)
+- Note: You need Powershell v7.x.x to use this tool. Please [Download and upgrade your Powershell to v7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1). 
 - Extract [Purview-API-Powershell.zip](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.zip) to a folder of your choice.
 - Right-Click on the folder and select "PowerShell > Open Here As Administrator" ![image](https://user-images.githubusercontent.com/13808986/131237833-6e9837c3-9e7f-4297-a800-2edf690fa9df.png)
 - Run "Purview-API-PowerShell.exe"
