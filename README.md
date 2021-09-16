@@ -7,7 +7,7 @@
 - Note: You need Powershell v7.x.x. Please [Download and upgrade your Powershell to v7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1). 
 - Install the script from PS Gallery [Install Purview-API-PowerShell](https://www.powershellgallery.com/packages/Purview-API-PowerShell)
 - Run "Purview-API-PowerShell"
-```powershell
+```PowerShell
 PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_name}
 ```
 - Note: The file "purview-api-body-payload.json" extracted in the same directory contains the API Body to be sent in case of PUT or POST APIs. Make sure to blank the file first, update your JSON into it and save the file before executing any "PUT" or "POST" APIs. If you need to back up your previous JSONs, you may do so in a different file name, since this file name "purview-api-body-payload.json" is reserved for the next upcoming API call.
