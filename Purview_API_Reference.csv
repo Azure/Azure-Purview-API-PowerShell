@@ -124,6 +124,8 @@ scan,readSystemScanRulesetVersion,GET,.scan.purview.azure.com,/systemScanRuleset
 scan,readSystemScanRulesetVersions,GET,.scan.purview.azure.com,/systemScanRulesets/versions?dataSourceType={dataSourceType}
 scan,readSystemScanRulesets,GET,.scan.purview.azure.com,/systemScanRulesets
 scan,readTrigger,GET,.scan.purview.azure.com,/datasources/{dataSourceName}/scans/{scanName}/triggers/default
+scan,createTrigger,PUT,.scan.purview.azure.com,/datasources/{dataSourceName}/scans/{scanName}/triggers/default
+scan,deleteTrigger,DELETE,.scan.purview.azure.com,/datasources/{dataSourceName}/scans/{scanName}/triggers/default
 scan,runScan,PUT,.scan.purview.azure.com,/datasources/{dataSourceName}/scans/{scanName}/runs/{uuid}
 types,createTypeDefs,POST,.catalog.purview.azure.com,/api/atlas/v2/types/typedefs
 types,deleteTypeDef,DELETE,.catalog.purview.azure.com,/api/atlas/v2/types/typedef/name/{name}
@@ -144,3 +146,6 @@ metadatapolicy,readMetadataPolicyByCollection,GET,.purview.azure.com,/policystor
 metadatapolicy,readMetadataPolicyByPolicyID,GET,.purview.azure.com,/policystore/metadataPolicies/{policyId}
 metadatapolicy,readAllMetadataPolicies,GET,.purview.azure.com,/policystore/metadataPolicies
 metadatapolicy,putMetadataPolicy,PUT,.purview.azure.com,/policystore/metadataPolicies/{policyId}
+collections,readAllCollections,GET,.purview.azure.com,/account/collections
+collections,createOrUpdateCollection,PUT,.purview.azure.com,/account/collections
+collections,deleteCollection,DELETE,.purview.azure.com,/account/collections
