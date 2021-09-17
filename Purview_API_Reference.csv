@@ -146,6 +146,6 @@ metadatapolicy,readMetadataPolicyByCollection,GET,.purview.azure.com,/policystor
 metadatapolicy,readMetadataPolicyByPolicyID,GET,.purview.azure.com,/policystore/metadataPolicies/{policyId},api-version=2021-07-01
 metadatapolicy,readAllMetadataPolicies,GET,.purview.azure.com,/policystore/metadataPolicies,api-version=2021-07-01
 metadatapolicy,putMetadataPolicy,PUT,.purview.azure.com,/policystore/metadataPolicies/{policyId},api-version=2021-07-01
-collections,readAllCollections,GET,.purview.azure.com,/account/collections,api-version=2019-10-01-preview
-collections,createOrUpdateCollection,PUT,.purview.azure.com,/account/collections/{collectionName6Chars},api-version=2019-10-01-preview
-collections,deleteCollection,DELETE,.purview.azure.com,/account/collections/{collectionName6Chars},api-version=2019-10-01-preview
+collections,readAllCollections,GET,.purview.azure.com,/account/collections,api-version=2019-11-01-preview
+collections,createOrUpdateCollection,PUT,.purview.azure.com,/account/collections/{collectionName6Chars},api-version=2019-11-01-preview
+collections,deleteCollection,DELETE,.purview.azure.com,/account/collections/{collectionName6Chars},api-version=2019-11-01-preview
