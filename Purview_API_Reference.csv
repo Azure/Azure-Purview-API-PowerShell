@@ -147,5 +147,5 @@ metadatapolicy,readMetadataPolicyByPolicyID,GET,.purview.azure.com,/policystore/
 metadatapolicy,readAllMetadataPolicies,GET,.purview.azure.com,/policystore/metadataPolicies
 metadatapolicy,putMetadataPolicy,PUT,.purview.azure.com,/policystore/metadataPolicies/{policyId}
 collections,readAllCollections,GET,.purview.azure.com,/account/collections
-collections,createOrUpdateCollection,PUT,.purview.azure.com,/account/collections
-collections,deleteCollection,DELETE,.purview.azure.com,/account/collections
+collections,createOrUpdateCollection,PUT,.purview.azure.com,/account/collections/{collectionName6Chars}
+collections,deleteCollection,DELETE,.purview.azure.com,/account/collections/{collectionName6Chars}
