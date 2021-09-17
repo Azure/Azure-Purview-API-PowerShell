@@ -10,7 +10,8 @@
 ```PowerShell
 PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_name}
 ```
-- Note: The file "purview-api-body-payload.json" extracted in the same directory contains the API Body to be sent in case of PUT or POST APIs. Make sure to blank the file first, update your JSON into it and save the file before executing any "PUT" or "POST" APIs. If you need to back up your previous JSONs, you may do so in a different file name, since this file name "purview-api-body-payload.json" is reserved for the next upcoming API call.
+## Samples & Usage Presentation 
+[Purview-API-Powershell.pdf](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.pdf)
 
 
 ************
