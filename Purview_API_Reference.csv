@@ -63,7 +63,7 @@ glossary,putPartial,PUT,.catalog.purview.azure.com,/api/atlas/v2/glossary/{gloss
 glossary,putTerm,PUT,.catalog.purview.azure.com,/api/atlas/v2/glossary/term/{termGuid},api-version=2021-07-01
 glossary,putTermPartial,PUT,.catalog.purview.azure.com,/api/atlas/v2/glossary/term/{termGuid}/partial,api-version=2021-07-01
 glossary,putTermsAssignedEntities,PUT,.catalog.purview.azure.com,/api/atlas/v2/glossary/terms/{termGuid}/assignedEntities,api-version=2021-07-01
-glossary,readAll,GET,.catalog.purview.azure.com,/api/atlas/v2/glossary?&limit={limit}&offset={offset}&sort={sort},api-version=2021-07-01
+glossary,readAll,GET,.purview.azure.com,/catalog/api/atlas/v2/glossary?&limit={limit}&offset={offset}&sort={sort},api-version=2021-07-01
 glossary,readOneGlossary,GET,.catalog.purview.azure.com,/api/atlas/v2/glossary?glossaryGuid={glossaryGuid}&limit={limit}&offset={offset}&sort={sort},api-version=2021-07-01
 glossary,readDetailed,GET,.catalog.purview.azure.com,/api/atlas/v2/glossary/{glossaryGuid}/detailed,api-version=2021-07-01
 glossary,readCategories,GET,.catalog.purview.azure.com,/api/atlas/v2/glossary/{glossaryGuid}/categories?limit={limit}&offset={offset}&sort={sort},api-version=2021-07-01
