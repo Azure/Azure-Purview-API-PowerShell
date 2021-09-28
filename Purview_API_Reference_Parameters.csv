@@ -51,3 +51,4 @@ API_PARAMETER,TYPE,DESCRIPTION
 {width},[integer],Thenumberofmaxexpandingwidthinlineage[default:6]
 {policyId},[string],PolicyIDForAuthZfineGrainedMetadataPolicyAPIs
 {collectionName},[string],CollectionNameForAuthZfineGrainedMetadataPolicyAPIs
+{boolean},[boolean],bool[true:false]
