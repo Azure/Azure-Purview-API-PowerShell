@@ -41,9 +41,9 @@ entity,readClassifications,GET,.purview.azure.com,/catalog/atlas/v2/entity/guid/
 entity,readHeader,GET,.purview.azure.com,/catalog/atlas/v2/entity/guid/{guid}/header,api-version=2021-07-01
 entity,readUniqueAttribute,GET,.purview.azure.com,/catalog/atlas/v2/entity/uniqueAttribute/type/{typeName}?qualifiedName={qualifiedName}&ignoreRelationships={ignoreRelationships}&minExtInfo={minExtInfo},api-version=2021-07-01
 search,search,POST,.purview.azure.com,/catalog/atlas/v2/search/query?keywords={keywords}&limit={limit}&offset={offset}&filterJSON={filterJSON}&facetsJSON={facetsJSON},api-version=2021-07-01
-search,searchAdvanced,POST,.purview.azure.com,/catalog/atlas/v2/search/advanced?keywords={keywords}&limit={limit}&offset={offset}&filterJSON={filterJSON}&facetsJSON={facetsJSON},api-version=2021-07-01
-search,searchSuggest,POST,.purview.azure.com,/catalog/atlas/v2/search/search?keywords={keywords}&limit={limit}&offset={offset}&filterJSON={filterJSON}&facetsJSON={facetsJSON},api-version=2021-07-01
-search,searchAutocomplete,GET,.purview.azure.com,/catalog/atlas/v2/search/autocomplete?keyword={keyword}&limit={limit},api-version=2021-07-01
+search,searchAdvanced,POST,.purview.azure.com,/catalog/api/search/advanced?keywords={keywords}&limit={limit}&offset={offset}&filterJSON={filterJSON}&facetsJSON={facetsJSON},api-version=2021-07-01
+search,searchSuggest,POST,.purview.azure.com,/catalog/api/search/suggest?keywords={keywords}&limit={limit}&offset={offset}&filterJSON={filterJSON}&facetsJSON={facetsJSON},api-version=2021-07-01
+search,searchAutocomplete,GET,.purview.azure.com,/catalog/api/search/autocomplete?keyword={keyword}&limit={limit},api-version=2021-07-01
 glossary,create,POST,.purview.azure.com,/catalog/api/atlas/v2/glossary,api-version=2021-07-01
 glossary,createCategories,POST,.purview.azure.com,/catalog/api/atlas/v2/glossary/categories,api-version=2021-07-01
 glossary,createCategory,POST,.purview.azure.com,/catalog/api/atlas/v2/glossary/category,api-version=2021-07-01
