@@ -110,7 +110,7 @@ scan,readClassificationRule,GET,.purview.azure.com,/scan/classificationrules/{cl
 scan,readClassificationRuleVersions,GET,.purview.azure.com,/scan/classificationrules/{classificationRuleName}/versions,api-version=2021-07-01
 scan,readClassificationRules,GET,.purview.azure.com,/scan/classificationrules,api-version=2021-07-01
 scan,readDatasource,GET,.purview.azure.com,/scan/datasources/{dataSourceName}/scans,api-version=2021-07-01
-scan,readDatasources,GET,.purview.azure.com,/scan/datasources/scans,api-version=2021-07-01
+scan,readDatasources,GET,.purview.azure.com,/scan/datasources,api-version=2021-07-01
 scan,readFilters,GET,.purview.azure.com,/scan/datasources/{dataSourceName}/scans/{scanName}/filters/custom,api-version=2021-07-01
 scan,readKeyVault,GET,.purview.azure.com,/scan/azureKeyVaults/{keyVaultName},api-version=2021-07-01
 scan,readKeyVaults,GET,.purview.azure.com,/scan/azureKeyVaults,api-version=2021-07-01
