@@ -19,7 +19,7 @@
 2. Batch Mode
 
 
-## Usage : Interactive & UI Mode. 
+## Interactive & UI Mode: Usage
 - In the Interactive & UI Mode, lot of interactive inline help and prompts will be given to make your usage experience friendly and easy. In this mode, any of the APIs listed here : [Purview_API_Reference.csv](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview_API_Reference.csv) can be executed. However, when you need to write batch scripts or automation for Purview, or even scheduled cron jobs at regular intervals, you must use the Batch Mode.
 - Note: Interactive Mode restricts you to the APIs listed in the CSV only since it builds the menu items from the CSV. However, in the Batch Mode, any other APIs not listed in the CSV, or any other variations of the APIs or even extra additional parameters can be supplied. 
 - For anyone who is running first time or getting familiarized with this tool may choose to use Interactive Mode
@@ -28,7 +28,7 @@
 PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_name}
 ```
 
-## Usage Examples: Batch, Scripting & Automation Mode 
+## Batch, Scripting & Automation Mode: Usage Examples 
 - Run Azure Purview APIs directly without any interactivity help or prompts.
 - Useful when building scripts or automation or scheduled cron jobs.
 - There are a few sample APIs shown via the commands below but you may execute any other Purview API from the Microsoft Official [Azure Purview REST API Documentation](https://docs.microsoft.com/en-us/rest/api/purview/)
