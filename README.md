@@ -14,7 +14,10 @@
 -   Open PowerShell on your Windows machine. Press "Windows" Key, type powershell, click "Run as administrator".
 -   On powershell prompt, enter "cd ~/Documents" to change to your User Home/Documents Folder. You may move to any other folder of your choice but make sure you have write permissions on whichever directory you choose.
 -   Then run the following command(s) to execute the Purview API Utility Script.
-- There are two modes of operation: Interactive Mode & Batch Mode. Sample usages in both these modes are given below.
+- There are two modes of operation: 
+-- Interactive Mode
+-- Batch Mode
+- Sample usages in both these modes are given below.
 - In the Interactive & UI Mode, lot of inline help and prompts will be given to make your usage experience friendly and easy. In this mode, any of the APIs listed here : [Purview_API_Reference.csv](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview_API_Reference.csv) can be executed. However, when you need to write batch scripts or automation for Purview, or even scheduled cron jobs at regular intervals, you must use the Batch Mode.
 - Note: Interactive Mode restricts you to the APIs listed in the above CSV only. However, in the Batch Mode, any other APIs not listed in the CSV, or any other variations of the APIs or even extra additional parameters can be supplied. For anyone who is getting familiarized with this tool may choose to use Interactive Mode, but for those who are using this utility tool regularly, Batch Mode is recommended.
 - Usage : Interactive & UI Mode. 
