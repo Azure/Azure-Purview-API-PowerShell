@@ -19,6 +19,7 @@
 PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_name}
 ```
 - Usage : Batch, Scripting & Automation Mode - Run Azure Purview APIs directly without any interactivity help or prompts. Useful when building scripts or automation or scheduled cron jobs.
+- There are a few sample APIs shown via the commands below but you may execute any other Purview API from the Microsoft Official [Azure Purview REST API Documentation](https://docs.microsoft.com/en-us/rest/api/purview/)
 ```PowerShell
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
