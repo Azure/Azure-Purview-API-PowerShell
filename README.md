@@ -10,13 +10,12 @@
 - Note: You need Powershell v7.x.x. Please [Download and upgrade your Powershell to v7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1). 
 
 ## Usage Steps
-- Steps To Execute:
--   Open PowerShell on your Windows machine. Press "Windows" Key, type powershell, click "Run as administrator".
--   On powershell prompt, enter "cd ~/Documents" to change to your User Home/Documents Folder. You may move to any other folder of your choice but make sure you have write permissions on whichever directory you choose.
--   Then run the following command(s) to execute the Purview API Utility Script.
+- Open PowerShell on your Windows machine. Press "Windows" Key, type powershell, click "Run as administrator".
+- On powershell prompt, enter "cd ~/Documents" to change to your User Home/Documents Folder. You may move to any other folder of your choice but make sure you have write permissions on whichever directory you choose.
+- Then run the following command(s) to execute the Purview API Utility Script.
 - There are two modes of operation: 
-1. Interactive Mode
-2. Batch Mode
+1. *Interactive Mode*
+2. *Batch Mode*
 
 
 ## Interactive & UI Mode: Usage
