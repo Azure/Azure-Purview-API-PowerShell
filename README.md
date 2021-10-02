@@ -17,19 +17,21 @@
 - There are two modes of operation: 
 1. Interactive Mode
 2. Batch Mode
-- Sample usages in both these modes are given below.
 - In the Interactive & UI Mode, lot of inline help and prompts will be given to make your usage experience friendly and easy. In this mode, any of the APIs listed here : [Purview_API_Reference.csv](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview_API_Reference.csv) can be executed. However, when you need to write batch scripts or automation for Purview, or even scheduled cron jobs at regular intervals, you must use the Batch Mode.
+
+## Usage : Interactive & UI Mode. 
 - Note: Interactive Mode restricts you to the APIs listed in the above CSV only. However, in the Batch Mode, any other APIs not listed in the CSV, or any other variations of the APIs or even extra additional parameters can be supplied. For anyone who is getting familiarized with this tool may choose to use Interactive Mode, but for those who are using this utility tool regularly, Batch Mode is recommended.
-- Usage : Interactive & UI Mode. 
 ```PowerShell
 PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_name}
 ```
-- Usage : Batch, Scripting & Automation Mode - Run Azure Purview APIs directly without any interactivity help or prompts. Useful when building scripts or automation or scheduled cron jobs.
+
+## Usage Examples: Batch, Scripting & Automation Mode 
+- Run Azure Purview APIs directly without any interactivity help or prompts. Useful when building scripts or automation or scheduled cron jobs.
 - There are a few sample APIs shown via the commands below but you may execute any other Purview API from the Microsoft Official [Azure Purview REST API Documentation](https://docs.microsoft.com/en-us/rest/api/purview/)
 ```PowerShell
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
 ```
 - Note: InputFile and OutputFile Parameters: are not mandatory but recommended. For most PUT and POST APIs (-HTTPMethod PUT or -HTTPMethod POST) you will notice from the Purview API Documentation that JSON Body needs to be sent with the API Request. In these POST and PUT scenarios it is recommended you make one JSON file and supply the name of this file in InputFile parameter. It is the file name on your local drive that contains the JSON to be sent as request body with the API Call. OutputFile is the name of the file that contains the output of the API in JSON format. OutputFile parameter is not mandatory. If you do not supply OutputFile, do not worry, the script will automatically generate one file named "purview-api-output-{todays-date-and-time}.json" in your current directory.
 
