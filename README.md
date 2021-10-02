@@ -3,13 +3,29 @@
 ************
 **Execute Azure Purview RESTful APIs via PowerShell**
 *****************************************************
-- Azure Purview REST APIs via Powershell. Based on [Purview API Complete Reference](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/azure-purview-rest-api-specs.zip) and [Purview API Docs](https://docs.microsoft.com/en-us/rest/api/purview/)
+- Azure Purview REST APIs via Powershell. Based on Microsoft Official [Azure Purview REST API Documentation](https://docs.microsoft.com/en-us/rest/api/purview/)
+
+## Download & Installation
+- Download & Install The Script : https://aka.ms/Purview-API-PS
 - Note: You need Powershell v7.x.x. Please [Download and upgrade your Powershell to v7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1). 
-- Install the script from PS Gallery [Install Purview-API-PowerShell](https://www.powershellgallery.com/packages/Purview-API-PowerShell)
-- Run "Purview-API-PowerShell"
+
+## Usage Steps
+- Steps To Execute:
+-   Open PowerShell on your Windows machine. Press "Windows" Key, type powershell, click "Run as administrator".
+-   On powershell prompt, enter "cd ~/Documents" to change to your User Home/Documents Folder. You may move to any other folder of your choice but make sure you have write permissions on whichever directory you choose.
+-   Then run the following command(s) to execute the Purview API Utility Script.
+- Usage : Interactive & UI Mode
 ```PowerShell
 PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_name}
 ```
+- Usage : Batch, Scripting & Automation Mode - Run Azure Purview APIs directly without any interactivity help or prompts. Useful when building scripts or automation or scheduled cron jobs.
+```PowerShell
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://fabrikampurview.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+```
+- Note: InputFile and OutputFile Parameters: are not mandatory but recommended. For most PUT and POST APIs you will notice JSON Body needs to be sent with the API Request. InputFile is the file name on your local drive that contains the JSON to be sent as request body with the API Call. OutputFile is the name of the file that contains the output of the API in JSON format. OutputFile parameter is not mandatory. If you do not supply OutputFile the script will automatically generate one file named "purview-api-output-{todays-date-and-time}.json" in your current directory.
+
 ## Samples & Usage Presentation 
 [Purview-API-Powershell.pdf](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.pdf)
 
