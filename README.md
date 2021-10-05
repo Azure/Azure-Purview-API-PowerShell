@@ -44,6 +44,13 @@ PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPID
 ## Samples & Usage Presentation 
 [Purview-API-Powershell.pdf](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.pdf)
 
+## Video - Examples, Samples, Demo Videos
+### Installation
+[![Installation](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/rrTYnEqPHgM)
+
+### Interactive Mode: Video Demo
+
+### Batch Mode: Video Demo
 
 ************
 **Benefits**
