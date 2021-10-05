@@ -49,11 +49,11 @@ PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPID
 [Purview-API-Powershell.pdf](https://github.com/Azure/Azure-Purview-API-PowerShell/blob/main/Purview-API-Powershell.pdf)
 
 ## Videos
-Installation Video [![Installation](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/rrTYnEqPHgM)
+### Installation Video [![Installation](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/rrTYnEqPHgM)
 
-Interactive Mode: Video [![Interactive Mode](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/rrTYnEqPHgM)
+### Interactive Mode: Video [![Interactive Mode](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/0M6jRG77Wt8)
 
-Batch Mode: Video [![Batch Mode](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/rrTYnEqPHgM)
+### Batch Script Automation Mode: Video [![Batch Mode](https://www.powershellgallery.com/Content/Images/Branding/packageDefaultIcon.svg)](https://youtu.be/VDkAFIG7Ii0)
 
 ************
 **Benefits**
