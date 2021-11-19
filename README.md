@@ -32,11 +32,11 @@ PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_n
 - Useful when building scripts or automation or scheduled cron jobs.
 - There are a few sample APIs shown via the commands below but you may execute any other Purview API from the Microsoft Official [Azure Purview REST API Documentation](https://docs.microsoft.com/en-us/rest/api/purview/). All APIs given in Official Purview API Docs are supported by this script in Batch Mode.
 ```PowerShell
-# Example - Get All TypeDefs In Purview Account
+# Example - Get All TypeDefs In The Purview Account
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
 # Example - Get AzureKeyVaults For Registering Scans
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/azurekeyvaults?api-version=2021-07-01"
-# Example - Get All DataSources Known To Purview
+# Example - Get All DataSources Registered In The Purview Account
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/datasources?api-version=2021-07-01" 
 # Example - Get All Scan Rule Sets - User Defined Only
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/scanrulesets?api-version=2021-07-01" 
