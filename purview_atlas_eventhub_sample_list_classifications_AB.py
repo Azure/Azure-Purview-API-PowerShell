@@ -1,5 +1,5 @@
 ###
-# Purview Eventhub Sample. This tool shows how to read Purview's EventHub and catch realtime Kafka notifications from the EventHub in Atlas Notifications (https://atlas.apache.org/2.0.0/Notifications.html) format.
+# Purview Eventhub Sample. This Python tool shows how to read Purview's EventHub and catch realtime Kafka notifications from the EventHub in Atlas Notifications (https://atlas.apache.org/2.0.0/Notifications.html) format.
 # author: github <abandyop>
 # contact : arindamba@microsoft.com
 # date : December, 2021
