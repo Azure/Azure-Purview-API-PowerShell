@@ -40,6 +40,8 @@ PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPID
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/datasources?api-version=2021-07-01" 
 # Example - Get All Scan Rule Sets - User Defined Only
 PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/scanrulesets?api-version=2021-07-01" 
+# Example - DELETE Collection
+PS >>   Purview-API-PowerShell -APIDirect -HTTPMethod DELETE -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/account/collections/{6-char-collection-id}?&api-version=2019-11-01-preview"
 ```
 - Note: InputFile and OutputFile Parameters: are not mandatory but recommended. 
 - InputFile: For most PUT and POST APIs (-HTTPMethod PUT or -HTTPMethod POST) you will notice from the Purview API Documentation that JSON Body needs to be sent with the API Request. In these POST and PUT scenarios it is recommended you make one JSON file and supply the name of this file in InputFile parameter. It is the file name on your local drive that contains the JSON to be sent as request body with the API invokation. 
