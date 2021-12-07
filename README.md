@@ -33,15 +33,15 @@ PS >>   Purview-API-PowerShell     -PurviewAccountName   {your_purview_account_n
 - There are a few sample APIs shown via the commands below but you may execute any other Purview API from the Microsoft Official [Azure Purview REST API Documentation](https://docs.microsoft.com/en-us/rest/api/purview/). All APIs given in Official Purview API Docs are supported by this script in Batch Mode.
 ```PowerShell
 # Example - Get All TypeDefs In The Purview Account
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET      -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/catalog/api/atlas/v2/types/typedefs?api-version=2021-07-01"     -InputFile inputfile.json     -OutputFile outputfile.json
 # Example - Get AzureKeyVaults For Registering Scans
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/azurekeyvaults?api-version=2021-07-01"
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET      -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/azurekeyvaults?api-version=2021-07-01"
 # Example - Get All DataSources Registered In The Purview Account
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/datasources?api-version=2021-07-01" 
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET      -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/datasources?api-version=2021-07-01" 
 # Example - Get All Scan Rule Sets - User Defined Only
-PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET    -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/scanrulesets?api-version=2021-07-01" 
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod GET      -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/scan/scanrulesets?api-version=2021-07-01" 
 # Example - DELETE Collection
-PS >>   Purview-API-PowerShell -APIDirect -HTTPMethod DELETE -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/account/collections/{6-char-collection-id}?&api-version=2019-11-01-preview"
+PS >>   Purview-API-PowerShell     -APIDirect    -HTTPMethod DELETE   -PurviewAPIDirectURL "https://{your-purview-account-name}.purview.azure.com/account/collections/{6-char-collection-id}?&api-version=2019-11-01-preview"
 ```
 - Note: InputFile and OutputFile Parameters: are not mandatory but recommended. 
 - InputFile: For most PUT and POST APIs (-HTTPMethod PUT or -HTTPMethod POST) you will notice from the Purview API Documentation that JSON Body needs to be sent with the API Request. In these POST and PUT scenarios it is recommended you make one JSON file and supply the name of this file in InputFile parameter. It is the file name on your local drive that contains the JSON to be sent as request body with the API invokation. 
