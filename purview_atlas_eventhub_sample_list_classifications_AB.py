@@ -12,12 +12,13 @@ import json
 import sys
 import csv
 
-csvfilename = 'C:/users/arind/Documents/out.txt.csv'
+# copy "connection_str" from your Purview Account's properties page "Atlas Kafka endpoint primary/secondary connection string"
 connection_str = 'Endpoint=sb://atlas-71c10ec1-6fab-4950-87bc-3af8bbab115c.servicebus.windows.net/;SharedAccessKeyName=AlternateSharedAccessKey;SharedAccessKey=GY6gRdoNilLugi6XPFMzrFz3FXGGgiZ09oD6ijZD/HA='
 consumer_group = '$Default'
 eventhub_entities_name = 'atlas_entities'
 eventhub_hook_name = 'atlas_hook'
 
+csvfilename = 'C:/users/arind/Documents/out.txt.csv'
 message_counter = 0
 message_with_classifications_counter = 0
 
