@@ -12,13 +12,12 @@ import json
 import sys
 import csv
 
-# copy "connection_str" from your Purview Account's properties page "Atlas Kafka endpoint primary/secondary connection string"
+csvfilename = 'C:/users/arind/Documents/out.txt.csv'
 connection_str = 'Endpoint=sb://atlas-71c10ec1-6fab-4950-87bc-3af8bbab115c.servicebus.windows.net/;SharedAccessKeyName=AlternateSharedAccessKey;SharedAccessKey=GY6gRdoNilLugi6XPFMzrFz3FXGGgiZ09oD6ijZD/HA='
 consumer_group = '$Default'
 eventhub_entities_name = 'atlas_entities'
 eventhub_hook_name = 'atlas_hook'
 
-csvfilename = 'C:/users/arind/Documents/out.txt.csv'
 message_counter = 0
 message_with_classifications_counter = 0
 
@@ -37,14 +36,18 @@ def processmessage(msgjsonraw):
             if 'classifications' in jsondata['message']['entity']:
                 message_with_classifications_counter = message_with_classifications_counter + 1
                 classificationscount = len(jsondata['message']['entity']['classifications'])
-                classifications = jsondata['message']['entity']['classifications']
+                classifications = ""
+                for I in range(classificationscount):
+                    classifications = classifications + jsondata['message']['entity']['classifications'][I]['typeName'] + " ---&--- "
                 guid = jsondata['message']['entity']['guid']
+                fqn = jsondata['message']['entity']['attributes']['qualifiedName']
                 print("Classifications Detected [%3d] :----> " %(classificationscount))
                 print("Classifications :-----> ", (classifications))
+                print("FQN - Full Qualified Name Path of the Asset :-----> ", (fqn))
                 with open(csvfilename, 'a+') as csvfile:
-                    fieldnames = ["GUID", "#ClassificationsCount","ClassificationsDetected", "JSON"]
+                    fieldnames = ["GUID", "FQN_Fully_Qualified_Name_Asset", "#ClassificationsCount","Classifications", "JSON"]
                     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                    writer.writerow({"GUID":guid, "#ClassificationsCount":classificationscount, "ClassificationsDetected":classifications, "JSON":msgjson})
+                    writer.writerow({"GUID":guid, "FQN_Fully_Qualified_Name_Asset":fqn, "#ClassificationsCount":classificationscount, "Classifications":classifications, "JSON":msgjson})
     print("-------------------------------------------------------------------------------------------------------------------")
 
 
@@ -85,7 +88,7 @@ if __name__ == '__main__':
     sys.stdout = open('C:/users/arind/Documents/out.txt', 'w')
     loop = asyncio.get_event_loop()
     with open(csvfilename, 'w') as csvfile:
-        fieldnames = ["GUID", "#ClassificationsCount","ClassificationsDetected", "JSON"]
+        fieldnames = ["GUID", "FQN_Fully_Qualified_Name_Asset", "#ClassificationsCount","Classifications", "JSON"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
     try:
