@@ -12,7 +12,7 @@ import json
 import sys
 sys.excepthook = lambda *args: None
 
-connection_str = 'Endpoint=sb://atlas-71c10ec1-6fab-4950-87bc-3af8bbab115c.servicebus.windows.net/;SharedAccessKeyName=AlternateSharedAccessKey;SharedAccessKey=GY6gRdoNilLugi6XPFMzrFz3FXGGgiZ09oD6ijZD/HA='
+connection_str = 'Endpoint=sb://atlas-xxxxxxx.servicebus.windows.net/;SharedAccessKeyName=AlternateSharedAccessKey;SharedAccessKey=XXXXYYYYYYZZZZZZ' #Copy this value from Azure Purview portal -> Purview account -> Properties -> "Atlas Kafka endpoint primary/secondary connection string"
 consumer_group = '$Default'
 eventhub_entities_name = 'atlas_entities'
 eventhub_hook_name = 'atlas_hook'
